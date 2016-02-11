@@ -1,0 +1,2000 @@
+#1453992345
+ls
+#1453992349
+vi 20_app_tri 
+#1453992377
+ll
+#1453992405
+cat 20_app_QPS
+#1453992411
+cat 20_app_qps 
+#1453992425
+cat 20_app_phx 
+#1453992450
+cp 20_app_phx 20_app_tri
+#1453992459
+vi 20_app_tri 
+#1453992609
+svn add 20_app_tri 
+#1453992616
+svn ci 20_app_tri 
+#1453992724
+visudo -f 20_app_tri
+#1453992736
+visudo -fc 20_app_tri
+#1453992751
+visudo -c -f 20_app_tri
+#1453996376
+ssh tri01ld
+#1453998543
+ssh tri02lp
+#1453999068
+ssh tri51lp
+#1453999565
+ssh tri01lt
+#1453999652
+ssh tri02lt
+#1453999782
+ssh tri01l
+#1453999785
+ssh tri01ld
+#1453999846
+ssh tri01lp
+#1454003001
+clear
+#1454010829
+ssh heo17lp
+#1454014249
+ls
+#1454014614
+ssh tri01lp
+#1454017395
+clear
+#1454017400
+ssh tri01lp
+#1454017777
+clear
+#1454017791
+ssh tri01lt
+#1454018168
+clear
+#1454018995
+exit
+#1453992271
+tmux
+#1454018996
+exit
+#1454417698
+cd svnlocal/vu/
+#1454417700
+svn up
+#1454417730
+cd 
+#1454417748
+cd filesys/os_linux/etc/sudoers.d/
+#1454417762
+svn -ci 20_app_tri 
+#1454417780
+svn ci 20_app_tri 
+#1454417901
+cd /mnt
+#1454417902
+ls
+#1454417905
+cd home/
+#1454417906
+ls
+#1454417908
+cd ..
+#1454417911
+cd hgfs/
+#1454417912
+ls
+#1454417913
+cd ..
+#1454417916
+cd test/
+#1454417916
+ls
+#1454417920
+cd ..
+#1454417921
+ls
+#1454417933
+cd
+#1454417943
+cd filesys/os_linux/etc/sudoers.d/
+#1454417947
+vi 20_app_tri 
+#1454417962
+clear
+#1454417964
+cd
+#1454417965
+clear
+#1454417967
+tmux
+#1454018996
+exit
+#1454418456
+cd inputs/app_customers/
+#1454418461
+vi phx_srv.cf 
+#1454421229
+clear
+#1454421236
+locate access.conf
+#1454421239
+cd
+#1454421248
+cd filesys/app_customers/tri_srv/etc/security/
+#1454421249
+ls
+#1454421251
+vi access.conf 
+#1454422213
+....
+#1454423385
+ls
+#1454423394
+svn up
+#1454424320
+svn status
+#1454424361
+svn add tri_srv
+#1454424394
+svn ci tri_srv/
+#1454424453
+rm -rf tri_srv/
+#1454424454
+svn up
+#1454424472
+cd
+#1454424475
+cd inputs/app_customers/
+#1454424476
+ls
+#1454424479
+vi tri_srv.cf 
+#1454424501
+svn ci tri_srv.cf 
+#1454424652
+vi tri_srv.cf 
+#1454429495
+ls
+#1454429497
+vi tsm_srv.cf 
+#1454429810
+locate tsm
+#1454429836
+
+#1454429856
+vi tsm_srv.cf 
+#1454430016
+cd
+#1454430019
+cd filesys/app_eai/tsm_client
+#1454430020
+ls
+#1454430024
+cd etc
+#1454430024
+ls
+#1454430028
+cd ..
+#1454430029
+cd opt
+#1454430030
+ls
+#1454430033
+cd tivoli/
+#1454430033
+ls
+#1454430036
+cd tsm/
+#1454430036
+ls
+#1454430039
+cd client/
+#1454430039
+ls
+#1454430041
+cd ba/
+#1454430042
+ls
+#1454430044
+cd
+#1454430168
+grep -Ri tri51lp
+#1454430581
+cd inputs/app_eai/
+#1454430583
+vi tsm_client.cf 
+#1454430693
+svn up
+#1454430711
+svn ci tsm_client.cf 
+#1454433068
+clear
+#1454433068
+cd
+#1454433070
+clear
+#1454421279
+locate tri_srv
+#1454421292
+vi filesys/app_customers/tri_srv/
+#1454421306
+cd
+#1454421311
+cd inputs/app_customers/
+#1454421312
+ls
+#1454421314
+vi tri_srv.cf 
+#1454424689
+cd
+#1454424695
+cd inputs/app_customers/
+#1454424697
+vi phx_srv.cf 
+#1454425765
+ls
+#1454425769
+cd 
+#1454425771
+cd filesys
+#1454425771
+ls
+#1454425774
+cd app_customers/
+#1454425774
+ls
+#1454425776
+cd tri_srv/
+#1454425777
+ls
+#1454425779
+cd etc/
+#1454425779
+ls
+#1454425781
+cd security/
+#1454425782
+ls
+#1454425787
+vi access.conf 
+#1454425851
+svn ci access.conf 
+#1454425898
+vi access.conf 
+#1454425910
+svn ci access.conf 
+#1454433074
+ls
+#1454418213
+ls
+#1454418216
+cd inputs
+#1454418217
+ls
+#1454418220
+cd app_customers/
+#1454418220
+ls
+#1454418224
+vi tri_srv.cf 
+#1454418370
+locate access.conf
+#1454418376
+cd
+#1454418389
+cd filesys/app_customers/phx_srv/etc/security/
+#1454418396
+ls
+#1454418400
+vi access.conf 
+#1454418415
+....
+#1454418418
+cd tri_srv/
+#1454418419
+ls
+#1454418422
+cd etc/security/
+#1454418423
+ls
+#1454418425
+vi access.conf 
+#1454418433
+cd
+#1454418437
+cd inputs/app_customers/
+#1454418438
+ls
+#1454418441
+vi tri_srv.cf 
+#1454418773
+cd
+#1454418782
+cd filesys/app_customers/
+#1454418783
+ls
+#1454418786
+cd tri_srv/
+#1454418787
+ls
+#1454418790
+cd etc/security/
+#1454418796
+vi access.conf
+#1454418824
+cd
+#1454418832
+cd inputs/os_linux/
+#1454418833
+ls
+#1454418838
+cd ..
+#1454418839
+ls
+#1454418843
+cd
+#1454418849
+cd filesys/os_linux/
+#1454418849
+ls
+#1454418851
+cd etc
+#1454418852
+ls
+#1454418856
+cd sudoers.d/
+#1454418857
+ls
+#1454418860
+vi 20_app_tri 
+#1454419550
+rm -rf 20_app_tri
+#1454419551
+svn up
+#1454419575
+vi 20_app_tri 
+#1454420032
+locate authz
+#1454420350
+vi 20_app_tri 
+#1454420377
+svn ci 20_app_tri
+#1454420476
+locate .tmp
+#1454420513
+cd
+#1454420528
+cd inputs/app_eai/
+#1454420529
+ls
+#1454420543
+rm svn-commit.tmp 
+#1454420545
+clearr
+#1454420548
+clear
+#1454420549
+sl
+#1454420557
+clar
+#1454420560
+clear
+#1454421205
+cd
+#1454421206
+ls
+#1454421207
+clear
+#1454421208
+ls
+#1454421210
+vi myscriptfile 
+#1454426462
+clear
+#1454430774
+ssh tsm03lp
+#1454430779
+ssh tri51lp
+#1454431643
+ssh tsm02lp
+#1454433063
+clear
+#1454417984
+ssh adm18lp
+#1454418613
+clear
+#1454418623
+ssh tri01lp
+#1454424551
+ssh tri01ld
+#1454425115
+ssh tri01lt
+#1454425960
+ssh tri02lt
+#1454426454
+clear
+#1454427097
+ping edw02lp
+#1454427135
+ssh edw02lp
+#1454427585
+clear
+#1454428333
+nslookup tri51lp
+#1454428345
+nslookup tri01lp
+#1454433187
+clear
+#1454433608
+ls
+#1454433613
+clear
+#1454433618
+ssh tri51lp
+#1454433646
+clear
+#1454434706
+nslookup dba01lp && nslookup mcprdsvc009
+#1454434978
+ssh dba01lp
+#1454435003
+vi /etc/resolv.conf 
+#1454435024
+ls
+#1454435047
+cd /etc/resolvconf/
+#1454435048
+ls
+#1454435057
+cd resolv.conf.d/
+#1454435058
+ls
+#1454435060
+vi base
+#1454435065
+vi head
+#1454435071
+cd ..
+#1454435072
+ls
+#1454435085
+vi interface-order 
+#1454435092
+ls
+#1454435097
+cd update.d/
+#1454435100
+ls
+#1454435104
+vi dnscache 
+#1454435182
+cd ..
+#1454435182
+ls
+#1454435185
+cd ..
+#1454435191
+vi resolv.conf
+#1454435413
+sudo vi resolv.conf 
+#1454435452
+nslookup adm18lp
+#1454435474
+sudo vi resolv.conf
+#1454435656
+nslookup tsm01lp
+#1454435661
+sudo vi resolv.conf
+#1454435683
+cd resolvconf/
+#1454435684
+ls
+#1454435692
+cd resolv.conf.d/
+#1454435693
+ls
+#1454435698
+vi base
+#1454435740
+sudo vi base
+#1454435758
+resolvconf -u
+#1454435773
+sudo resolvconf -u
+#1454435782
+cd ../..
+#1454435787
+vi resolv.conf 
+#1454435875
+sudo vi resolv.conf
+#1454435901
+sudo su -
+#1454438647
+exit
+#1454438572
+ssh adm18lp
+#1454438636
+clear
+#1454438642
+tmux -l
+#1454438651
+tmux list
+#1454438662
+tmux list-sessions
+#1454438681
+vi /etc/resolv.conf 
+#1454438693
+cd /etc/resolvconf/resolv.conf.d/
+#1454438693
+ls
+#1454438697
+vi base
+#1454438711
+sudo su -
+#1454438894
+ssh adm18lp
+#1454439093
+sudo ifdown
+#1454439099
+sudo ifdown -a
+#1454439102
+sudo ifup -a
+#1454439108
+sudo su -
+#1454439380
+sudo vi /etc/resolv.conf 
+#1454439414
+nslookup killi
+#1454439420
+nslookup kili
+#1454439435
+sudo su -
+#1454440230
+ssh asm01lp
+#1454440287
+ssh dvm07lt
+#1454440383
+clear
+#1454440493
+nslookup
+#1454440500
+man nslookup
+#1454440612
+nslookup mc.vanderbilt.edu
+#1454440624
+nslookup tri02lp
+#1454440872
+ps -ef | grep tty
+#1454441665
+resolvconf -a
+#1454441669
+resolvconf -u
+#1454441680
+sudo resolvconf -u
+#1454441854
+ssh vch11lp
+#1454442548
+sudo su -
+#1454442949
+nslookup vch11lp
+#1454442956
+sudo su -
+#1454505341
+exit
+#1454505341
+exit
+#1454505341
+exit
+#1454505282
+vi .tmux.conf 
+#1454505341
+exit
+#1454513103
+ssh tsm03lp
+#1454513157
+ssh tri51lp
+#1454513293
+exit
+#1454601682
+ssh adm18lp
+#1454610722
+clear
+#1454610734
+cd /etc/
+#1454610738
+vi cron.daily/
+#1454610742
+ls
+#1454610750
+cd cron.daily/
+#1454610751
+ls
+#1454610759
+vi logrotate 
+#1454610813
+vi passwd
+#1454610822
+vi mlocate 
+#1454610836
+vi logrotate
+#1454610852
+ssh som18lp
+#1454610859
+som11lp
+#1454610868
+ssh som01lp
+#1454613132
+clear
+#1454613160
+cd
+#1454613162
+clear
+#1454613164
+exit
+#1454593839
+ssh nde10lp
+#1454612960
+clear
+#1454612971
+ssh nde10lp
+#1454613100
+clear
+#1454614103
+ssh its-hclnra01.its.vanderbilt.edu
+#1454614133
+ssh adm18lp
+#1454614363
+grep -Ri nde.conf *
+#1454614382
+cd filesys
+#1454614383
+ls
+#1454614395
+grep -Ri nde.conf 
+#1454614431
+grep -r nde.conf ./*
+#1454614441
+grep -Ri nde.conf *
+#1454614468
+svn up
+#1454614476
+cd
+#1454614478
+cd inputs
+#1454614485
+grep -r nde.conf ./*
+#1454614498
+cd app_customers/
+#1454614502
+vi nde_srv.cf 
+#1454614620
+svn ci nde_srv.cf 
+#1454614852
+vi nde_srv.cf 
+#1454615064
+vi som_srv.cf 
+#1454615071
+vi tri_srv.cf 
+#1454615080
+vi phx_srv.cf 
+#1454615089
+ls
+#1454615093
+vi ori_srv.cf 
+#1454615108
+vi jam_srv.cf 
+#1454615132
+vi nde_srv.cf 
+#1454616070
+clear
+#1454616073
+exit
+#1454616079
+tmux
+#1454622802
+exit
+#1454683010
+locate promises
+#1454683023
+vi inputs/promises.cf 
+#1454686861
+cd filesys
+#1454686862
+ls
+#1454686865
+cd os_linux/
+#1454686865
+ls
+#1454686867
+cd etc
+#1454686868
+ls
+#1454686881
+cd ..
+#1454686884
+ls
+#1454686887
+cd app_customers/
+#1454686888
+ls
+#1454686893
+cd ric_srv/
+#1454686893
+ls
+#1454686895
+cd etc
+#1454686896
+ls
+#1454687925
+cd security
+#1454687925
+ls
+#1454687929
+cd limits.d
+#1454687929
+ls
+#1454687938
+vi 100_stack_28.conf 
+#1454689263
+vi 100_stack_35.conf
+#1454696414
+ls
+#1454696420
+vi 100_stack_35.conf 
+#1454696439
+svn add 100_stack_35.conf 
+#1454696448
+svn ci 100_stack_35.conf 
+#1454697899
+ls
+#1454698155
+...
+#1454698160
+ls
+#1454698176
+mkdir sysconfig
+#1454698179
+cd sysconfig/
+#1454698193
+vi httpd_stack_35
+#1454698285
+cd ..
+#1454698286
+ls
+#1454698289
+cd profile.d/
+#1454698290
+ls
+#1454698293
+cd ..
+#1454698295
+cd sysconfig/
+#1454698298
+locate sysconfig
+#1454698321
+...
+#1454698324
+cd ..
+#1454698334
+cd oak_srv/etc/sysconfig/
+#1454698334
+ls
+#1454698337
+vi httpd
+#1454698349
+....
+#1454698397
+grep -Ri "export GO_CL *
+#1454699511
+ls
+#1454699513
+cd ric_srv/
+#1454699514
+ls
+#1454699515
+cd etc
+#1454699516
+ls
+#1454699518
+cd sysconfig/
+#1454699519
+ls
+#1454699521
+vi httpd_stack_35 
+#1454699533
+locate httpd
+#1454700714
+ls
+#1454700931
+cp httpd_stack_35 httpd
+#1454700932
+ls
+#1454700936
+rm httpd_stack_35 
+#1454700937
+ls
+#1454700987
+vi httpd 
+#1454701158
+cd ..
+#1454701169
+svn add sysconfig/
+#1454701176
+svn commit sysconfig/
+#1454701539
+clear
+#1454701731
+locate promises
+#1454701742
+cd
+#1454701745
+cd inputs
+#1454701747
+vi promises.cf 
+#1454708201
+cd app_customers/
+#1454708202
+ls
+#1454708205
+vi tsm_srv.cf 
+#1454708210
+cd
+#1454708211
+cd filesys
+#1454708212
+ls
+#1454708214
+cd app_customers/
+#1454708214
+ls
+#1454708217
+vi tsm_srv/
+#1454708221
+cd tsm_srv/
+#1454708222
+ls
+#1454708224
+cd etc
+#1454708224
+ls
+#1454708227
+cd security/
+#1454708227
+ls
+#1454708232
+cd limits.d/
+#1454708232
+ls
+#1454708238
+vi 91-nofile-01-03.conf 
+#1454709094
+....
+#1454709097
+cd ..
+#1454709098
+ls
+#1454709101
+cd tri_srv/
+#1454709102
+ls
+#1454709103
+cd etc
+#1454709104
+ls
+#1454709106
+cd security/
+#1454709106
+ls
+#1454709971
+eit
+#1454709974
+exit
+#1454680091
+ssh ric35ld
+#1454701537
+clear
+#1454702345
+ssh tib01ld
+#1454702765
+ssh adm18lp
+#1454706033
+clear
+#1454706034
+ls
+#1454706036
+ll
+#1454708417
+ssh tsm01lp
+#1454709341
+ssh tri01ld
+#1454709971
+eit
+#1454709974
+exit
+#1454680529
+cd inputs
+#1454680534
+ls
+#1454680538
+cd app_customers/
+#1454680538
+ls
+#1454680587
+vi ric_srv.cf 
+#1454696843
+svn ci ric_srv.cf 
+#1454696985
+vi ric_srv.cf 
+#1454697134
+svn ci ric_srv.cf 
+#1454697209
+vi ric_srv.cf 
+#1454697367
+svn ci ric_srv.cf 
+#1454697553
+vi ric_srv.cf 
+#1454697851
+svn ci ric_srv.cf 
+#1454697959
+vi ric_srv.cf 
+#1454699953
+vi tib_srv.cf 
+#1454700722
+vi ric_srv.cf 
+#1454701200
+svn ci ric_srv.cf 
+#1454701540
+clear
+#1454701591
+vi tib_srv.cf 
+#1454702486
+svn ci tib_srv.cf 
+#1454706966
+ssh tri01ld
+#1454707868
+clear
+#1454707868
+ls
+#1454707871
+vi tri_srv.cf 
+#1454709971
+eit
+#1454709974
+exit
+#1454680531
+cd filesys
+#1454680532
+ls
+#1454680643
+cd app_customers/
+#1454680661
+ls
+#1454680663
+cd ric_srv/
+#1454680664
+ls
+#1454680667
+cd etc
+#1454680668
+ls
+#1454680671
+cd security/
+#1454680671
+ls
+#1454680675
+cd limits.d/
+#1454680675
+ls
+#1454680684
+vi 100_stack_28.conf 
+#1454680698
+cd ..
+#1454680698
+ls
+#1454680703
+vi access.netgroup.conf 
+#1454680714
+ls
+#1454680722
+vi access.netgroup.conf 
+#1454681650
+...
+#1454681652
+ls
+#1454681655
+cd etc
+#1454681656
+ls
+#1454681661
+cd profile.d/
+#1454681662
+ls
+#1454681665
+cd ..
+#1454681666
+ls
+#1454681669
+cd security/
+#1454681670
+ls
+#1454681673
+cd limits.d/
+#1454681674
+ls
+#1454681682
+vi 100_stack_40.conf 
+#1454681842
+cd ....
+#1454681844
+....
+#1454681848
+cd filesys
+#1454681849
+ls
+#1454682227
+cd
+#1454682235
+grep -Ri ric35ld *
+#1454682467
+vi access.netgroup.conf 
+#1454682561
+cd /etc/security/limits.d/
+#1454682563
+ls
+#1454684444
+cd ..
+#1454684445
+ls
+#1454684446
+cd
+#1454684447
+ls
+#1454684452
+cd svnlocal/vu/
+#1454684453
+svn up
+#1454684468
+cd
+#1454684478
+cd filesys/app_customers/ric_srv/
+#1454684479
+ls
+#1454684481
+cd etc
+#1454684482
+ls
+#1454684488
+cd security
+#1454684489
+ls
+#1454684494
+vi access.netgroup.conf 
+#1454684511
+locate 20_app_ric
+#1454684517
+...
+#1454684538
+cd os_linux/etc/sudoers.d/
+#1454684544
+vi 20_app_ric 
+#1454686560
+grep RIC_MCG_CMS_* 20_app_ric 
+#1454686612
+grep ric_vicc_adm 20_app_ric 
+#1454686626
+grep ric_vicc_* 20_app_ric 
+#1454689044
+ssh ric28ld
+#1454696481
+svn ci 20_app_ric 
+#1454700080
+ssh ric24lt
+#1454700186
+ssh ric28lt
+#1454701532
+clear
+#1454702512
+ssh tib01lt
+#1454707519
+ssh tri01ld
+#1454709971
+eit
+#1454709974
+exit
+#1454679760
+Tuba8822
+#1454679765
+tmux
+#1454709976
+exit
+#1454939734
+exi
+#1454939738
+exit
+#1454939754
+ssh nde50lp
+#1455105523
+clear
+#1455106442
+exit
+#1454939722
+tmux
+#1455106446
+exit
+#1455106826
+ls
+#1455106834
+cd inprog/
+#1455106835
+ls
+#1455106881
+cd info
+#1455106884
+cd ..
+#1455106885
+ls
+#1455106887
+cd inpr
+#1455106890
+cd inprog/
+#1455106891
+ls
+#1455106916
+cd
+#1455106916
+ls
+#1455106919
+cd inprog/
+#1455106920
+ls
+#1455106925
+cd info
+#1455106927
+vi info
+#1455106942
+ls
+#1455106945
+ls -lah
+#1455106969
+rm -rf *copy*
+#1455106974
+ls -lah
+#1455106981
+ls
+#1455106986
+ls -lah
+#1455107003
+rm -rf .*copy*
+#1455107005
+ls -lah
+#1455107017
+cd .config/
+#1455107018
+ls
+#1455107020
+cd ..
+#1455107021
+ls
+#1455107024
+ls -lah
+#1455107029
+vi .bashrc 
+#1455107061
+vi .banner
+#1455107795
+vi .bash_profile 
+#1455107830
+vi .bash_login 
+#1455107839
+vi info 
+#1455107882
+vi .config
+#1455107886
+cd .config/
+#1455107887
+ls
+#1455107889
+cd ..
+#1455107889
+ls
+#1455107934
+vi .bash_history 
+#1455107950
+rm -rf .bash_history 
+#1455108072
+ls -lah
+#1455108081
+cd ..
+#1455108085
+vi .bashrc 
+#1455108103
+ll
+#1455108110
+cd inprog/
+#1455108111
+ls
+#1455108113
+ll
+#1455108122
+cd ..
+#1455108124
+vi .bashrc
+#1455108142
+ll
+#1455108147
+cd inprog/
+#1455108148
+ll
+#1455108507
+vi .bash_rc
+#1455108511
+ls -lah
+#1455108648
+vi .banner 
+#1455108653
+vi .bashrc
+#1455108693
+vi .bash_login
+#1455108714
+vi info 
+#1455108725
+vi .bash_profile 
+#1455108871
+vi .viminfo 
+#1455108985
+vi .lesshst
+#1455108997
+vi info
+#1455109088
+cd ..
+#1455109089
+ls
+#1455109091
+cd bin
+#1455109092
+ls
+#1455109097
+vi ssh.exp 
+#1455109138
+ls
+#1455109142
+cd ..
+#1455109143
+ls
+#1455109155
+cd inprog/
+#1455109155
+ls
+#1455109159
+ll
+#1455109170
+ls -lah
+#1455109174
+vi .bashrc
+#1455109282
+vi .bash_login
+#1455109291
+vi .bash_profile 
+#1455109341
+vi .index
+#1455109352
+vi info
+#1455109363
+vi .bash_login
+#1455109376
+vi .bash_profile
+#1455109388
+vi .bashrc
+#1455109410
+vi ~/.bashrc
+#1455109433
+. ~/.bashrc
+#1455109453
+mv .b* ~/bin
+#1455109456
+ls -lah
+#1455109468
+mv info ~/bin
+#1455109472
+ls -lah
+#1455109475
+vi .index 
+#1455109485
+vi .viminfo 
+#1455109493
+cd .config/
+#1455109494
+ls
+#1455109496
+cd ..
+#1455109498
+ls
+#1455109500
+ls -lah
+#1455109513
+cd ..
+#1455109515
+ls -lah
+#1455109528
+vi .bashrc
+#1455109563
+ssh tsm01lp
+#1455114397
+ls -lah
+#1455114415
+cd bin
+#1455114415
+ls
+#1455114419
+vi info 
+#1455114432
+ls -lah
+#1455114454
+mv .banner ~
+#1455114456
+ls -lah
+#1455114471
+mv .bash_* ~
+#1455114474
+ls -lah
+#1455114480
+vi .bashrc 
+#1455114538
+cd
+#1455114541
+vi .bashrc 
+#1455114551
+. .bashrc
+#1455114556
+ssh tsm01lp
+#1455114615
+cd bin
+#1455114615
+ls
+#1455114619
+vi info
+#1455114626
+mv info ~
+#1455114630
+ssh tsm01lp
+#1455114667
+ls
+#1455114671
+cd
+#1455114674
+ls -lah
+#1455114691
+vi .config/
+#1455114709
+vi .profile 
+#1455114733
+exit
+#1455114826
+ssh tsm01lp
+#1455115080
+vi .bash_profile
+#1455115231
+ls -lah
+#1455115246
+vi .tmux.conf 
+#1455115285
+ls -lah
+#1455115311
+. .bash_login
+#1455115326
+ssh tsm01lp
+#1455115388
+clear
+#1455115393
+. .bash_profile 
+#1455115405
+ls -lah
+#1455115417
+vi .bash_login
+#1455115430
+. .bash_login
+#1455115439
+. .bash_profile
+#1455115444
+:q!
+#1455115446
+ls
+#1455115450
+cd bin
+#1455115450
+ls
+#1455115455
+cd ..
+#1455115457
+ls -lah
+#1455115470
+vi .bashrc
+#1455115558
+vi .bashrc 
+#1455115626
+. .bashrc
+#1455115632
+. .bash_login
+#1455115668
+ls -lah
+#1455115682
+vi bash_profile
+#1455115689
+vi .bash_profile 
+#1455115767
+cp .b* ~/bin
+#1455115774
+cp info ~/bin
+#1455115778
+cd bin
+#1455115778
+ls
+#1455115781
+ls -lah
+#1455115790
+vi ssh.exp 
+#1455115842
+vi .bashrc
+#1455115861
+cd ..
+#1455115862
+ls
+#1455115865
+cd inprog/
+#1455115866
+ls
+#1455115868
+ls -lah
+#1455115871
+vi .index 
+#1455115879
+vi .viminfo 
+#1455115968
+cd .config/
+#1455115968
+ls
+#1455115971
+ls -lah
+#1455115975
+cd htop/
+#1455115976
+ls
+#1455115979
+vi htoprc p
+#1455116001
+cd ..
+#1455116002
+ls
+#1455116004
+cd ..
+#1455116005
+ls
+#1455116007
+ls -lah
+#1455116014
+vi .lesshst 
+#1455116027
+cd ..
+#1455116029
+ls -lah
+#1455116033
+vi .bashrc
+#1455116773
+ls
+#1455116777
+vi .bashrc
+#1455116791
+clear
+#1455116809
+. .bash_profile
+#1455116821
+ssh adm18lp . .bash_profile
+#1455116837
+pwd
+#1455116841
+ls
+#1455116967
+ssh adm18lp
+#1455117057
+ls -lah
+#1455117065
+cd bin
+#1455117065
+ls
+#1455117069
+ls -lah
+#1455117073
+cd ..
+#1455117081
+ls -lah
+#1455117092
+cp .banner ~/bin
+#1455117112
+ssh adm18lp
+#1455117363
+ssh -f adm18lp
+#1455117370
+ssh -f adm18lp info
+#1455117409
+. .bash_profile
+#1455117539
+ls -lah
+#1455117543
+vi .ssh
+#1455117546
+cd .ssh
+#1455117547
+ls
+#1455117550
+cd ..
+#1455117551
+ls
+#1455117552
+ls -lah
+#1455117685
+vi .bashrc
+#1455117718
+ssh adm18lp
+#1455117867
+. .bash_profile
+#1455117881
+ls -lah
+#1455117888
+. .bashrc
+#1455117896
+vi .bash_login
+#1455117903
+vi info
+#1455117913
+./info
+#1455117926
+ls -lah
+#1455117939
+vi .bash_logout
+#1455117976
+. .bashrc
+#1455117980
+vi .bashrc
+#1455117998
+. .bashrc
+#1455118162
+. .bash_profile
+#1455118178
+vi .bash_profile 
+#1455118243
+. .bash_login
+#1455118254
+vi .bash_login
+#1455118273
+vi infdo
+#1455118283
+cp info bin
+#1455118287
+cd bin
+#1455118290
+vi info
+#1455118294
+ls
+#1455118297
+vi info
+#1455118302
+cd ..
+#1455118306
+vi info
+#1455118318
+cd bin
+#1455118321
+./info
+#1455118335
+cd ..
+#1455118337
+cd bin
+#1455118337
+ls
+#1455118342
+./info
+#1455118345
+ls -lah
+#1455118350
+. .bash_login
+#1455118356
+vi .bash_login
+#1455118365
+ls -lah
+#1455118373
+vi .bash_profile
+#1455118392
+vi .bashrc
+#1455118473
+. .bashrc
+#1455118480
+ssh adm18lp
+#1455118525
+. .bash_login
+#1455118537
+vi bashrc
+#1455118543
+vi .bashrc 
+#1455118627
+ls -lah
+#1455118634
+vi .bashrc
+#1455118658
+ssh -f adm18lp ~/bin
+#1455118671
+. .bash_profile
+#1455118686
+. bash_login
+#1455118690
+. .bash_login
+#1455118700
+vi .bash_login
+#1455118708
+ls -lah
+#1455118713
+vi .bashrc
+#1455118756
+ls -lah
+#1455118759
+vi .banner
+#1455118849
+ssh adm18lp
+#1455118884
+vi .bashrc
+#1455118925
+cd
+#1455118933
+. .bash_profile
+#1455118941
+. .bash_login
+#1455118946
+. .bashrc
+#1455118955
+cd bin
+#1455118956
+ls
+#1455118959
+. .bashrc
+#1455118986
+vi ssh.exp
+#1455119014
+ssh adm18lp
+#1455119071
+ls -lah
+#1455119089
+vi .bash_profile
+#1455119138
+exit
+#1455120266
+ssh adm18lp
+#1455120868
+clear
+#1455120878
+ssh adm18lp
+#1455120942
+ls
+#1455120949
+cd bin
+#1455120950
+ls
+#1455120990
+cd
+#1455120991
+ls
+#1455120994
+vi .basrc
+#1455120999
+vi .bashrc
+#1455121189
+vi .bashrc 
+#1455121237
+clear
+#1455121331
+cd inputs
+#1455121331
+ls
+#1455121333
+cd app_customers/
+#1455121334
+ls
+#1455121337
+vi ric_srv.cf 
+#1455121689
+svn up
+#1455121697
+svn ci ric_srv.cf 
+#1455122388
+vi ric_srv.cf 
+#1455122673
+exit
+#1455119660
+ls -lah
+#1455119678
+cd bin
+#1455119679
+ls
+#1455119689
+ssh adm18lp
+#1455119811
+cd
+#1455119814
+. .bashrc
+#1455119825
+. .bashrc 
+#1455119828
+ls -lah
+#1455119855
+vi .bashrc~
+#1455119872
+vi .bashrc
+#1455119890
+rm -rf .bashrc~
+#1455119892
+. .bashrc
+#1455119896
+cd
+#1455119898
+ls -lah
+#1455119914
+. .bash_login
+#1455119926
+ssh adm18lp
+#1455119986
+ssh ric35ld
+#1455122516
+clear
+#1455122526
+. .bash_logout 
+#1455122533
+. .bash_login 
+#1455122675
+exit
+#1455124201
+ric28lt
+#1455124206
+ssh ric28lt
+#1455133031
+nslookup 10.109.13.17
+#1455133048
+nslookup 10.125.13.19
+#1455133066
+nslookup 10.152.8.34
+#1455133303
+nslookup oas31lp
+#1455133958
+exit
+#1455123832
+ssh adm18lp
+#1455123914
+ssh ric35ld
+#1455133946
+clear
+#1455133958
+exit
+#1455124126
+cd inputs/app_customers/
+#1455124129
+vi ric_srv.cf 
+#1455126174
+svn ci ric_srv.cf 
+#1455126301
+vi ora_client.cf 
+#1455126329
+vi ora_11g_srv.cf 
+#1455132184
+vi ric_srv.cf 
+#1455132270
+grep -Ri tnsnames
+#1455132285
+vi ora_client.cf 
+#1455132389
+grep -Ri insta
+#1455132436
+grep -Ri instantclient
+#1455132530
+vi ric_srv.cf 
+#1455133958
+exit
+#1455124332
+grep -Ri ora_client 
+#1455124615
+cd inputs
+#1455124617
+vi promises.cf 
+#1455125401
+svn ci promises.cf 
+#1455125478
+svn up
+#1455125489
+vi promises.cf 
+#1455125638
+svn ci promises.cf 
+#1455125997
+vi promises.cf 
+#1455133958
+exit
+#1455123005
+tmux
+#1455133960
+exit
+#1455136151
+nslookup ric28ld && nslookup ric28lt && nslookup ric35ld
+#1455137641
+ssh asm20lp
+#1455140350
+ssh ric35ld
+#1455140459
+cd inputs
+#1455140463
+vi promises.cf 
+#1455140499
+grep -Ri /common 
+#1455140516
+cd app_customers/
+#1455140520
+vi ora_client.cf 
+#1455140636
+vi ric_srv.cf 
+#1455141392
+exit
+#1455199747
+ssh tri01lt
+#1455199962
+exit
+#1455199757
+ssh asm28lt
+#1455199773
+ssh ric28lt
+#1455199962
+exit
+#1455199739
+ssh adm18lp
+#1455199962
+exit
+#1455199729
+ssh tsm01lp
+#1455199963
+exit
+#1455199710
+ssh adm18lp
+#1455199718
+tmux
+#1455199965
+exit
+#1455201306
+cd .ssh
+#1455201307
+ls
+#1455201312
+cat id_rsa.pub 
+#1455201361
+cd
+#1455201362
+ls
+#1455201369
+git clone git://github.com/chuej/dotfiles ~/.dotfiles
+#1455201373
+ls
+#1455201392
+cd .dotfiles/
+#1455201393
+ls
+#1455201401
+mkdir billstuff
+#1455201409
+git add billstuff/
+#1455201414
+git commit billstuff/
+#1455201430
+git -co billstuff/
+#1455201494
+git push billstuff/
+#1455201523
+ls
+#1455201531
+git add billstuff/
+#1455201538
+git help
+#1455201558
+cd ..
+#1455201575
+git commit .dotfiles
+#1455201586
+git pull
+#1455201591
+sudo git pull
+#1455201596
+sudo su -
+#1455201604
+ls
+#1455201606
+cd .dotfiles/
+#1455201607
+ls
+#1455201611
+git pull
+#1455201619
+rm billstuff/
+#1455201629
+rm -rf billstuff/
+#1455201630
+ls
+#1455201643
+cd bash
+#1455201644
+ls
+#1455201649
+vi completion
+#1455201655
+vi completions 
+#1455201664
+cd ..
+#1455201672
+mkdir billstuff
+#1455201676
+cd bill
+#1455201679
+cd billstuff/
+#1455201698
+cp ~/.b* .
+#1455201699
+ls
+#1455201743
+cp .b* ~/.dotfiles/* 
+#1455201753
+ls
+#1455201757
+cd ..
+#1455201758
+ls
+#1455201763
+ls -lahh
+#1455201767
+cd .hal
+#1455201773
+ls -lah
+#1455201781
+cd ..
+#1455201782
+ls
+#1455201788
+ls -lah
+#1455201819
+cp .b* ~/.dotfiles/billstuff/
+#1455201829
+cp info ~/.dotfiles/billstuff/
+#1455201830
+ls
+#1455201852
+cp .tmux ~/.dotfiles/billstuff/
+#1455201860
+ls -lah
+#1455201873
+cp .tmux.conf ~/.dotfiles/billstuff/
+#1455201888
+cd info
+#1455201889
+ls
+#1455201892
+cd info
+#1455201896
+vi info
+#1455201914
+cp info ~/.dotfiles/billstuff/
+#1455201924
+cd
+#1455201927
+ls -lah
+#1455201949
+. .bash_login
+#1455201955
+. .bashrc
+#1455201962
+exit

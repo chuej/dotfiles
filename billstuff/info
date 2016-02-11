@@ -1,0 +1,96 @@
+#!/bin/bash
+
+#
+# Simple script to show basic system info
+# 2016-01-11 - Wilbur Longwisch
+#
+
+clear
+cat .banner
+
+trim() {
+    local var="$*"
+    var="${var#"${var%%[![:space:]]*}"}"   # remove leading whitespace characters
+    var="${var%"${var##*[![:space:]]}"}"   # remove trailing whitespace characters
+    echo -n "$var"
+}
+
+# Static Vars
+readonly clr_teal="\033[1;36;40m"
+readonly clr_red="\033[31;40m"
+readonly clr_redgrey="\033[0;31;47m"
+readonly clr_brightred="\033[1;31;40m"
+readonly clr_whiteblack="\033[37;40m"
+readonly clr_brightwhite="\033[1;37;40m"
+readonly clr_green="\033[1;32;40m"
+readonly clr_yellow="\033[1;33;40m"
+readonly clr_bluegrey="\033[34;47m"
+readonly clr_greenblack="\033[32;40m"
+readonly clr_reset="\033[m"
+
+# Get system info
+LASTLOGIN=$(trim $(last -2 -i  $USER | head -2 | tail -1 | cut -c 20-))
+HOST=$(trim `uname -nro`)
+CPU=$(trim `cat /proc/cpuinfo | grep -i "model name" | cut -d: -f2 | head -n 1` )
+CPUCOUNT=$(trim `cat /proc/cpuinfo | grep -i "model name" | cut -d: -f2 | wc -l` )
+CPUSPEED=$(trim `cat /proc/cpuinfo | grep -i "cpu MHz" | cut -d: -f2 | head -n 1` )
+RAMTOTAL=$(trim `free -m | grep Mem: | awk {'print $2'}` )"M"
+RAMUSED=$(trim `free -m | grep Mem: | awk {'print $3-$7'}` )"M"
+RAMFREE=$(trim `free -m | grep ^Mem | awk '{print $4}'` )"M"
+UPTIME=$(trim `uptime | cut -d, -f1` )
+LOAD=$(trim `uptime | cut -d: -f5` )
+echo -e "${clr_whiteblack} "
+echo "Last login: $LASTLOGIN"
+echo " "
+echo -e "${clr_teal}HOST    ${clr_red}:${clr_brightwhite} $HOST"
+echo -e "${clr_teal}CPU     ${clr_red}:${clr_brightwhite} $CPU (x$CPUCOUNT) $CPUSPEED MHz"
+echo -e "${clr_teal}MEMORY  ${clr_red}:${clr_brightwhite} Total - $RAMTOTAL  Used - ${clr_brightred}$RAMUSED ${clr_brightwhite}Free - ${clr_green}$RAMFREE"
+
+NICCOUNT=0 #while this is zero it adds the header to the output
+TEMP="" #stores a list of the network interfaces we've already output
+# Loop through all the network interfaces and gather name,speed,duplex, and ip
+for i in `ls /sys/class/net/ | grep -v lo | grep -v sit | grep -v tun`; do
+    [ -f /sys/class/net/$i ] && continue
+    if [[ $TEMP != *"$i"* ]]; then
+        TEMP="$i,$TEMP"
+        IP="";
+		VLAN="";
+	    if echo "$i" | grep -q "\\."; then
+			#vlan involved
+			VLAN=" vlan : "`echo $i | cut -d. -f2`;
+			i=`echo $i | cut -d. -f1`;
+	    fi
+        SPEED=`cat /sys/class/net/$i/speed 2>/dev/null`
+        DUPLEX=`cat /sys/class/net/$i/duplex 2>/dev/null`
+        for x in `/sbin/ifconfig | grep $i | awk {'print $1'} | cut -d: -f1`; do
+            IP="`/sbin/ifconfig $x | grep inet | awk {'print $2'} | cut -d: -f2` $IP"
+        done;
+        # append in the bond type if we're dealing with one.
+        if [[ $i == *"bond"* ]]; then
+            IP="$IP${clr_reset}${clr_red}$(trim `cat /proc/net/bonding/bond0 | grep 'Bonding Mode:' | awk '{$1=""; $2 = ""; print $0}'`)"
+        fi
+		if [[ $TEMP == *"$i"* && $VLAN != "" ]]; then
+            echo -e "          ${clr_greenblack}$i$VLAN${clr_whiteblack}"
+			continue
+		fi
+        if [ "$NICCOUNT" = 0 ]; then
+            echo -e "${clr_teal}NETWORK ${clr_red}: ${clr_redgrey}$i$VLAN${clr_brightwhite} $SPEED$DUPLEX ${clr_yellow}$IP"
+        else
+            echo -e "          ${clr_redgrey}$i$VLAN${clr_brightwhite} $SPEED$DUPLEX ${clr_yellow}$IP"
+        fi
+        # if the current interface is a bond then try to show the interfaces in the bond and prevent
+        # them from showing independently.
+        if [[ $i == *"bond"* ]]; then
+            for x in `cat /proc/net/bonding/$i | grep 'Slave Interface:' | awk {'print $3'}`; do
+                TEMP="$x,$TEMP"
+                SPEED=`cat /sys/class/net/$x/speed 2>/dev/null`
+                DUPLEX=`cat /sys/class/net/$x/duplex 2>/dev/null`
+                echo -e "${clr_reset}             ${clr_bluegrey}$x${clr_whiteblack} $SPEED$DUPLEX"
+            done;
+        fi
+        NICCOUNT+=1
+    fi
+done;
+echo -e "${clr_reset} "
+echo "$UPTIME $LOAD"
+echo " "
